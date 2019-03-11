@@ -2,7 +2,7 @@ using Mux
 
 @app test = (
   Mux.defaults,
-  page(respond("Landing Page!")),
+  page(respond("<html><body><h1>Landing Page!</h1></body></html>")),
   page("/about", respond("About Me!")),
   Mux.notfound())
 
