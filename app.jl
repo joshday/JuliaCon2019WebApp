@@ -10,4 +10,4 @@ using Mux
   Mux.notfound())
 
 @info "Serving app on $(ARGS[1])"
-@sync serve(test, ARGS[1])
+fetch(serve(test, ARGS[1]))
