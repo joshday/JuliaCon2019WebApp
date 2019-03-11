@@ -1,1 +1,1 @@
-web: $BUILD_DIR/julia --project app.jl $PORT
+web: julia --project app.jl $PORT
