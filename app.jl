@@ -10,5 +10,4 @@ using Mux
   Mux.notfound())
 
 @info "Serving app on $(ARGS[1])"
-# serve(test, "https://polar-shore-85058.herokuapp.com", ARGS[1])
-fetch(serve(test, ARGS[1]))
+fetch(serve(test, "https://polar-shore-85058.herokuapp.com", ARGS[1]))
