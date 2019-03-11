@@ -1,1 +1,1 @@
-web: julia --project app.jl $PORT
+web: julia --project=$(pwd) app.jl $PORT
