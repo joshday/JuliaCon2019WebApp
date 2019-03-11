@@ -2,8 +2,8 @@ using Mux
 
 @app test = (
   Mux.defaults,
-  page(respond("<h1>Hello World!!</h1>")),
-  page("/about", respond("<h1>About Me</h1>")),
+  page(respond("Landing Page!")),
+  page("/about", respond("About Me!")),
   Mux.notfound())
 
 @info "Serving app on $(ARGS[1])"
