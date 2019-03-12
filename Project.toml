@@ -1,5 +1,6 @@
 [deps]
 CSSUtil = "70588ee8-6100-5070-97c1-3cb50ed05fe8"
 Interact = "c601a237-2ae4-5e1e-952c-7a85b0c7eef1"
+Mux = "a975b10e-0019-58db-a62f-e48ff68538c9"
 Observables = "510215fc-4207-5dde-b226-833fc4488ee2"
 WebIO = "0f1e0344-ec1d-5b48-a673-e5cf874b6c29"
