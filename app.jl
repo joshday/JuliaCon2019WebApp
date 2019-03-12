@@ -1,10 +1,11 @@
-using Mux
+using Mux, Interact, CSSUtil, WebIO, Plots
 
-@app test = (
-  Mux.defaults,
-  page(respond("<html><body><h1>Landing Page!</h1></body></html>")),
-  page("/about", respond("About Me!")),
-  Mux.notfound())
+const PORT = parse(Int64, ARGS[1])
 
-@info "Serving app on $(ARGS[1])"
-fetch(serve(test, parse(Int64, ARGS[1])))
+#-----------------------------------------------------------------------# ui
+ui = @manipulate for i in 1:100
+    plot(rand(i))
+end
+
+#-----------------------------------------------------------------------# Run Server
+WebIO.webio_serve(page("/", req -> ui), PORT)
