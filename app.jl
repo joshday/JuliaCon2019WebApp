@@ -1,4 +1,4 @@
-using Observables, Interact, CSSUtil, WebIO
+using Mux, Observables, Interact, CSSUtil, WebIO
 
 const PORT = parse(Int64, ARGS[1])
 
