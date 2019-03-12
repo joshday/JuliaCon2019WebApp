@@ -1,4 +1,5 @@
 using Mux, Interact, CSSUtil, WebIO, Plots
+plotly()
 
 const PORT = parse(Int64, ARGS[1])
 
