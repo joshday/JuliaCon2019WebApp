@@ -18,7 +18,7 @@ ui = vbox(
 
     md"""
     ## Sliders
-    """
+    """,
     x1, x1out,
 
     md"""
