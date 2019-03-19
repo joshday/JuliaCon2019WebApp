@@ -1,4 +1,5 @@
 using Mux, Observables, Interact, CSSUtil, WebIO, Markdown
+using Observables: @map
 
 const PORT = parse(Int64, ARGS[1])
 
