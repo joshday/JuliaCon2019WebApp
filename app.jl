@@ -17,7 +17,7 @@ x4 = textbox("Enter text here")
 x4out = @map "Echo: $(&x4)"
 
 x5 = button("Click me!")
-x5 = @map "You've clicked this button $(&x5) times"
+x5out = @map "You've clicked this button $(&x5) times"
 
 ui = vbox(
     "Interact is neat!",
