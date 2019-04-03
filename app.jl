@@ -12,7 +12,7 @@ x2 = checkboxes(1:5)
 x2out = @map "You have checked: $(&x2)"
 
 ui = vbox(
-    "Here is some interact stuff",
+    md"# Interact stuff!",
 
     "Sliders:",
     x1, x1out,
