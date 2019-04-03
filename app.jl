@@ -12,14 +12,10 @@ x2 = checkboxes(1:5)
 x2out = @map "You have checked: $(&x2)"
 
 ui = vbox(
-    "Welcome to a Tour of [Interact.jl](https://github.com/JuliaGizmos/Interact.jl)!",
-    hline(),
+    "Here is some interact stuff",
 
     "Sliders:",
     x1, x1out,
-
-    hline(),
-
     "Checkboxes",
     x2, x2out,
 )
