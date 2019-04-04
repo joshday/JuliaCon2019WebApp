@@ -24,7 +24,7 @@ x5out = @map "You've clicked this button $(&x5) times"
 style1 = style("background-color" => "lightgray", "padding" => "5px")
 style2 = style("background-color" => "lightblue", "padding" => "5px")
 
-ui() = vbox(
+ui(req) = vbox(
     "Interact is neat!",
     hline(),
     hbox(x1, x1out)(style1),
@@ -40,4 +40,4 @@ ui() = vbox(
 
 #-----------------------------------------------------------------------# Run Server
 @info "Running server..."
-fetch(WebIO.webio_serve(page("/", req -> ui()), PORT))
+fetch(WebIO.webio_serve(page("/", ui), PORT))
